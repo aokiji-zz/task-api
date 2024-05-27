@@ -16,15 +16,6 @@ enum Priority {
   LOW
 }
 
-model Produto {
-  codigo    Int     @id @default(autoincrement())
-  nome      String  @unique @db.VarChar(50)
-  descricao String  @db.Text
-  marca     String  @db.VarChar(25)
-  categoria String  @db.VarChar(25)
-  preco     Decimal @db.Money
-}
-
 model Task {
   id          Int       @id @default(autoincrement())
   title       String
